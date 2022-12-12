@@ -20,4 +20,4 @@ _A simple tool to apply specific texture modifications to classic Tomb Raider le
 Thank you to:
 
 * Trxyebeep, for guidance on requirements, and testing.
-* DanzaG, for the TRLevelReader library - part of [TRRando](https://github.com/DanzaG/TR2-Rando).
+* DanzaG, for the TRLevelReader library - see [TRRando](https://github.com/DanzaG/TR2-Rando).
