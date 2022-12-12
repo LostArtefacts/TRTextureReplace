@@ -5,7 +5,6 @@ using System.Reflection;
 
 namespace TRTextureReplace.Utils;
 
-
 public static class AssemblyUtils
 {
     public static Stream GetResourceStream(string relativePath)
