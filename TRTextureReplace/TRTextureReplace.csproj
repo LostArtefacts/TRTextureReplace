@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>disable</Nullable>
+		<UseWpf>true</UseWpf>
+		<UseWindowsForms>true</UseWindowsForms>
+
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<AssemblyName>TRTextureReplace</AssemblyName>
+		<ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+
+		<PublishSingleFile>true</PublishSingleFile>
+		<PublishTrimmed>false</PublishTrimmed>
+		<PublishReadyToRun>true</PublishReadyToRun>
+		<EnableCompressionInSingleFile>false</EnableCompressionInSingleFile>
+		<SelfContained>false</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+		<Product>Tomb Raider Texture Replacer</Product>
+		<Copyright>Copyright © Tomb Raider Community 2022</Copyright>
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Resources\icon.ico" />
+	  <None Remove="Resources\Mods\tr3crystal.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Page Remove="Resources\styles.xaml" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="RectanglePacker">
+			<HintPath>Deps\RectanglePacker.dll</HintPath>
+		</Reference>
+		<Reference Include="TRLevelReader">
+			<HintPath>Deps\TRLevelReader.dll</HintPath>
+		</Reference>
+		<Reference Include="TRModelTransporter">
+			<HintPath>Deps\TRModelTransporter.dll</HintPath>
+		</Reference>
+		<Reference Include="TRTexture16Importer">
+			<HintPath>Deps\TRTexture16Importer.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+	  <Resource Include="Resources\icon.ico" />
+	  <Resource Include="Resources\Mods\tr3crystal.png" />
+	  <Resource Include="Resources\styles.xaml" />
+	</ItemGroup>
+</Project>
